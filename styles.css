@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:ital,wght@0,300;1,500;1,700;1,900&display=swap');
+
+:root{
+    --background: #001233;
+    --color_font_default: white;
+    --bold: 900;
+    --medium: 700;
+    --light: 400;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background);
+    color: var(--color_font_default);
+}
+
+/*    COMIENZO DE NAV BAR     */
+
+.caja-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: #0A1128;
+}
+
+.caja-nav p{
+    font-size: xx-large;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.caja-nav ul{
+    display: flex;
+}
+
+.opciones{
+    color: var(--color_font_default);
+    padding: 5px;
+}
+
+/*    TERMINACION DE NAV BAR     */
+/*    COMIENZO DE MAIN     */
+
+.caja-main{
+    display: flex;
+    padding: 10px 70px;
+}
+
+.caja-descripcion p{
+    padding: 20px;
+}
+
+.texto-nombre{
+    font-size: xx-large;
+    font-weight: var(--bold);
+}
+
+.texto-introduccion{
+    font-weight: var(--medium);
+}
+
+.caja-foto{
+    display: flex;
+    height: 200px;
+}
+
+.caja-foto img{
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.caja-foto img:hover{
+    -webkit-box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.caja-formal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.caja-formal p{
+    padding: 5px 0;
+    font-size: small;
+    font-weight: var(--light);
+    
+}
