@@ -4,6 +4,7 @@
     --background: #001233;
     --background-small: #0A1128;
     --color_font_default: white;
+    --important-text-color: #ff4a57;
     --bold: 900;
     --medium: 700;
     --light: 400;
@@ -34,6 +35,7 @@ html {
 }
 
 .caja-nav p{
+    color: var(--important-text-color);
     font-size: 50px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -63,6 +65,10 @@ html {
 .texto-nombre{
     font-size: 35px;
     font-weight: var(--bold);
+}
+
+.texto-nombre span{
+    color: var(--important-text-color);
 }
 
 .texto-introduccion{
@@ -100,14 +106,40 @@ html {
     
 }
 
+.formal{
+    color: #ff4a57;
+}
+
 
 /*    ARRANCA LA QUERY PARA SCREEN, PANTALLA COMPLETA    */
 @media screen and (min-width: 1000px) {
+
+    /*    ARRANCA LA QUERY PARA SCREEN, PARA NAV    */
+
+    .opciones{
+        font-size: 30px;
+        padding: 30px;
+        transition: all 0.5s;
+    }
+
+    .opciones:hover{
+        color: var(--important-text-color);
+    }
+
+   
+
+    
+
+
+
+    /*    TERMINA LA QUERY PARA SCREEN, PARA NAV    */
+
+    /*    ARRANCA LA QUERY PARA SCREEN, PARA MAIN    */
     .caja-main{
         background-color: var(--background-small);
         margin: 0 300px;
         border-radius: 8px;
-        outline: solid 1px;
+        outline: solid 2px;
     }
 
     .texto-nombre{
@@ -129,6 +161,8 @@ html {
     .caja-formal p{
         font-size: 20px;
     }
+
+    /*    TERMINA LA QUERY PARA SCREEN, PARA MAIN    */
 
 
 
