@@ -111,8 +111,58 @@ html {
 }
 
 
+/*    ARRANCA LA QUERY PARA TABLET*/
+
+
+@media (min-width: 800px) {
+
+    /*    ARRANCA LA QUERY  PARA NAV    */
+
+    .opciones{
+       font-size: 20px;
+       padding: 20px;
+       transition: all 0.5s;
+   }
+
+   .opciones:hover{
+       color: var(--important-text-color);
+   }
+   /*    TERMINA LA QUERY  PARA NAV    */
+   
+   /*  ARRANCA MAIN  */
+   .caja-main{
+       margin: 100px 50px 50px 50px;
+       border-radius: 8px;
+       background-color: var(--background-small);
+       outline: solid 1px;
+   }
+
+   .caja-descripcion{
+       font-size: 40px;
+   }
+
+   .caja-formal{
+       margin: 30px 100px;
+       border-radius: 8px;
+       background-color: var(--background-small);
+       outline: white solid 1px;
+   }
+
+   .caja-formal p{
+       font-size: 20px;
+   }
+
+   /*  TERMINA MAIN  */
+
+
+}
+
+/*    TERMINA LA QUERY PARA TABLET*/
+
+
 /*    ARRANCA LA QUERY PARA SCREEN, PANTALLA COMPLETA    */
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 1224px) {
 
     /*    ARRANCA LA QUERY PARA SCREEN, PARA NAV    */
 
@@ -125,13 +175,6 @@ html {
     .opciones:hover{
         color: var(--important-text-color);
     }
-
-   
-
-    
-
-
-
     /*    TERMINA LA QUERY PARA SCREEN, PARA NAV    */
 
     /*    ARRANCA LA QUERY PARA SCREEN, PARA MAIN    */
@@ -164,8 +207,7 @@ html {
 
     /*    TERMINA LA QUERY PARA SCREEN, PARA MAIN    */
 
-
-
 }
-    
+  
+
 
