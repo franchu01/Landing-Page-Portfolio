@@ -110,6 +110,45 @@ html {
     color: #ff4a57;
 }
 
+/*  DATOS PERSONALES */
+
+.caja-datos-personales{
+    outline: solid 1px ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 35px;
+    margin-bottom: 100px;
+    background-color: var(--background-small);
+    justify-content: space-between;
+}
+
+.lista-datos-personales ul{
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.lista-datos-personales span{
+    color: var(--important-text-color);
+}
+
+.lista-dato{
+    margin-bottom: 10px;
+}
+
+
+.caja-redes-sociales{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+
+
+
+
+/*DATOS PERSONALES*/
+
 
 /*    ARRANCA LA QUERY PARA TABLET*/
 
@@ -183,6 +222,7 @@ html {
         margin: 0 300px;
         border-radius: 8px;
         outline: solid 2px;
+        min-width: 500px;
     }
 
     .texto-nombre{
@@ -193,10 +233,12 @@ html {
     .caja-descripcion{
         font-size: 40px;
     }
-
+  
     .caja-formal{
+        
         margin: 30px 500px;
         border-radius: 8px;
+        min-width: 500px;
         background-color: var(--background-small);
         outline: white solid 2px;
     }
