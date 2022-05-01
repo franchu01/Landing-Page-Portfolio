@@ -5,60 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-
 <body>
 
-    <header class="caja-header">
-        <nav class="caja-nav">
+    <header>
+        <nav class="menu">
             <p>FRAN</p>
-            <ul>
-                <li><a href="" class="opciones">INICIO</a></li>
-                <li><a href="" class="opciones">SOBRE MI</a></li>
-                <li><a href="" class="opciones">PORTFOLIO</a></li>
-                <li><a href="" class="opciones">CONTACTO</a> </li>
+            <ul class="toggle">
+                <li><a href="" class="options">INICIO</a></li>
+                <li><a href="#SOBRE MI" class="options">SOBRE MI</a></li>
+                <li><a href="" class="options">PORTFOLIO</a></li>
+                <li><a href="" class="options" >REDES</a></li>
+                <li><a href="" class="options">CONTACTAME!</a></li>
             </ul>
+
+            <label for="BOTTON">
+                <div class="button_options"> 
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </label>
+
         </nav>
+        <input type="checkbox" id="BOTTON" class="menu-toggle">
     </header>
-    <main class="caja-main">
-        <div class="caja-descripcion">
-            <p class="texto-nombre">Hola! Me llamo <span>Francisco</span></p>
-            <p class="texto-introduccion">Soy estudiante de Ingenieria en Sistemas de Informacion y me encanta todo lo relacionado con desarrollo web</p>
-        </div>
-        <aside class="caja-foto">
-            <img src="./FOTO MIA.jpeg" alt="">
-        </aside>
-    </main>
+    <main>
 
-    <div class="caja-formal">
-        <p class="formal">Ahora un poquito mas formal...</p>
-        <p >Me llamo Francisco Cersosimo, tengo 21 años y actualmente estudio Ingenieria en Sistemas en la UTN. Tambien, estoy haciendo un curso de desarroll web en el instituto NUCBA. Estoy buscando una pasantia de 4 horas por dias y homeoffice. Me considero una persona de rapido aprendizaje y con la experiencia que tengo siento que puedo adaptarme con facilidad a grupos. </p>
-    </div>
-    <div>
-    <div class="caja-datos-personales">
+        <section class="sobre_mi" id="SOBRE MI">
 
-        <div class="lista-datos-personales">
+            <div class="container_info_sobre_mi">
+                <p class="sobre_mi_nombre">Hola! Me llamo <span>Francisco</span></p>
+                <p class="sobre_mi_descripcion">Tengo 21 años y soy estudiante de Ingenieria en Sistemas en la UTN, tambien estoy haciendo un curso de desarrollo web en NUNCBA.</p>
+            </div>
+            <div class="containter_foto_mia">
+                <img  class="foto_mia" src="./FOTO MIA.jpeg" alt="">
+                <p class="cv">Curriculum</p>
+            </div>
 
-            <ul>
-                <li class="lista-dato">Nombre:  <span>Francisco Lisandro Cersosimo</span> </li>
-                <li class="lista-dato">Mail: <span>franchucersosimo@gmail.com</span> </li>
-                <li class="lista-dato">Telefono: <span>+54 11-2461-6029</span> </li>
-                <li class="lista-dato">Estado actual: <span>Salvaje</span> </li>
+            <aside class="sobre_mi_aside">
+
+
+            </aside>
+        </section>
+
+        <section class="mis_habilidades">
+            <div class="mis_habilidades_titulo">
+                <p>MIS HABILIDADES</p>
+            </div>
+            <ul class="mis_habilidades_lista">
+                <li>
+                    <div class="habilidades">
+                        <i class="fa-solid fa-people-group"></i>
+                        <p>TRABAJO EN EQUIPO</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione incidunt magnam quis odit nostrum dolor nam est sunt aperiam illo.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="habilidades">
+                    <i class="fa-solid fa-atom"></i>
+                    <p>MATERIAS BASICAS</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta veniam repellendus minus autem ut placeat quas nulla natus cum.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="habilidades">
+                    <i class="fa-solid fa-computer"></i>
+                    <p>LENGUAJES DE PROGRAMACION</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe animi ullam voluptate nisi nihil iste aliquam ducimus culpa enim!
+                    </p>
+                    </div>
+                </li>
             </ul>
 
+            <section class="mis_habilidades">
+                <div class="mis_habilidades_titulo">
+                    <p>COMO TRABAJO ?</p>
+                </div>
+                <ul class="como_trabajo_lista">
+                    <li>
+                        <div class="habilidades">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p>DIAGNOSTICO</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione incidunt magnam quis odit nostrum dolor nam est sunt aperiam illo.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="habilidades">
+                        <i class="fa-solid fa-crop"></i>
+                        <p>DISEÑO</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta veniam repellendus minus autem ut placeat quas nulla natus cum.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="habilidades">
+                        <i class="fa-solid fa-database"></i>
+                        <p>DESARROLLO</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe animi ullam voluptate nisi nihil iste aliquam ducimus culpa enim!
+                        </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="habilidades">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>IMPLEMENTO</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe animi ullam voluptate nisi nihil iste aliquam ducimus culpa enim!
+                        </p>
+                        </div>
+                    </li>
+                </ul>
+        </section>
 
-        <div class="caja-redes-sociales">
+    </main>
+    <footer>
 
-             <p>.</p>
-             <p>.</p>
-             <p>.</p>
-             <p>.</p>
-              
-        </div>
-
-    </div>
-    
-    
+    </footer>   
 </body>
 </html>

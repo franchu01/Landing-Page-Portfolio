@@ -12,9 +12,22 @@
 
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-size: 33px;
+}
+
+* img {
+    width: 100%;
+    height: auto;
+}
+
+body{
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 html {
@@ -23,233 +36,256 @@ html {
     color: var(--color_font_default);
 }
 
-/*    COMIENZO DE NAV BAR     */
+a{
+    color: var(--color_font_default);
+}
 
-.caja-nav{
+/* NAV BAR */
+
+
+
+header{
+    display: flex;
+    padding: 20px 30px;
+    background-color: var(--background-small);
+    justify-content: space-between;
+}
+
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
-    margin-bottom: 50px;
-    background-color: var(--background-small);
+    width: 100%;
 }
 
-.caja-nav p{
-    color: var(--important-text-color);
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
 
-.caja-nav ul{
+nav p{
     display: flex;
-}
-
-.opciones{
-    color: var(--color_font_default);
-    padding: 5px;
-}
-
-/*    TERMINACION DE NAV BAR     */
-/*    COMIENZO DE MAIN     */
-
-.caja-main{
-    display: flex;
-    padding: 10px 70px;
-}
-
-.caja-descripcion p{
-    padding: 20px;
-}
-
-.texto-nombre{
-    font-size: 35px;
+    font-size: 60px;
     font-weight: var(--bold);
-}
-
-.texto-nombre span{
-    color: var(--important-text-color);
-}
-
-.texto-introduccion{
-    font-size: 20px;
-    font-weight: var(--medium);
-}
-
-.caja-foto{
-    display: flex;
-    height: 200px;
-}
-
-.caja-foto img{
-    border-radius: 100%;
-    transition: all 0.5s;
-}
-
-.caja-foto img:hover{
-    box-shadow: 2px 2px 10px rgb(0, 0, 0);
-}
-
-/*    TERMINACION DEL MAIN     */
-
-.caja-formal{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 40px;
-}
-
-.caja-formal p{
-    padding: 5px 0;
-    font-size: small;
-    font-weight: var(--light);
+    color: #ff4a57;
+    letter-spacing: 2px;
     
 }
 
-.formal{
-    color: #ff4a57;
+.toggle{
+    flex-direction: column;
+    background-color: var(--important-text-color);
+    display: none;
 }
 
-/*  DATOS PERSONALES */
 
-.caja-datos-personales{
-    outline: solid 1px ;
+.button_options{
+    background-color: var(--background-small);
+    outline: white 1px solid;
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.button_options:hover{
+    background-color: var(--color_font_default);
+    color: #ff4a57;
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu-toggle:checked + .toggle{
+    display: block;
+}
+
+/* SOBRE MI */
+
+.sobre_mi{
+    margin: 50px 0 10px 20px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 35px;
-    margin-bottom: 100px;
-    background-color: var(--background-small);
-    justify-content: space-between;
 }
 
-.lista-datos-personales ul{
-    margin-bottom: 30px;
-    padding-left: 0;
+.sobre_mi_nombre{
+    font-size: 50px;
+    font-weight: var(--medium);
 }
-
-.lista-datos-personales span{
+.sobre_mi_nombre span{
     color: var(--important-text-color);
+    font-size: 50px;
 }
 
-.lista-dato{
-    margin-bottom: 10px;
-}
-
-
-.caja-redes-sociales{
+.sobre_mi div{
     display: flex;
-    padding: 50px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre_mi_descripcion{
+    margin: 0;
+}
+
+.container_info_sobre_mi{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre_mi img{
+    height: 260px;
+    width: 200px;
+    padding: 10px;
+}
+
+.cv{
+    background-color: var(--important-text-color);
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.cv:hover{
+    background-color: var(--color_font_default);
+    color:var(--important-text-color);
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*  MIS HABILIDADES */ /* COMO TRABAJO ? */
+
+.mis_habilidades_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 40px 0;
+}
+
+.mis_habilidades_titulo p{
+    color: var(--important-text-color);
+    font-size: 30px;
+    font-weight: var(--medium);
+}
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+    margin: 10px 20px 20px 20px;
+    outline: white 1px solid;
+    border-radius: 8px;
+    transition: all 0.7s;
+}
+
+.mis_habilidades p{
+    margin-top: 10px;
+}
+
+.habilidades:hover{
+    background-color: var(--color_font_default);
+    color: var(--important-text-color);
+    outline: none;
+    outline: var(--important-text-color) 1px solid;
 }
 
 
 
+/* MEDIA QUERY PANTALLA */
+
+@media screen and (min-width: 1224px){
 
 
-/*DATOS PERSONALES*/
+    /* NAV BAR */
 
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+    }
 
-/*    ARRANCA LA QUERY PARA TABLET*/
+    .menu label{
+        display: none;
+    }
 
-
-@media (min-width: 800px) {
-
-    /*    ARRANCA LA QUERY  PARA NAV    */
-
-    .opciones{
-       font-size: 20px;
-       padding: 20px;
-       transition: all 0.5s;
-   }
-
-   .opciones:hover{
-       color: var(--important-text-color);
-   }
-   /*    TERMINA LA QUERY  PARA NAV    */
-   
-   /*  ARRANCA MAIN  */
-   .caja-main{
-       margin: 100px 50px 50px 50px;
-       border-radius: 8px;
-       background-color: var(--background-small);
-       outline: solid 1px;
-   }
-
-   .caja-descripcion{
-       font-size: 40px;
-   }
-
-   .caja-formal{
-       margin: 30px 100px;
-       border-radius: 8px;
-       background-color: var(--background-small);
-       outline: white solid 1px;
-   }
-
-   .caja-formal p{
-       font-size: 20px;
-   }
-
-   /*  TERMINA MAIN  */
-
-
-}
-
-/*    TERMINA LA QUERY PARA TABLET*/
-
-
-/*    ARRANCA LA QUERY PARA SCREEN, PANTALLA COMPLETA    */
-
-@media screen and (min-width: 1224px) {
-
-    /*    ARRANCA LA QUERY PARA SCREEN, PARA NAV    */
-
-    .opciones{
-        font-size: 30px;
-        padding: 30px;
+    .toggle{
+        display: flex;
+        flex-direction: row;
+        background-color: none;
+        gap: 15px;
+        background-color: #eee0;
+    }
+    .options{
+        background-color: var(--background);
+        font-size: 25px;
+        font-weight: var(--medium);
         transition: all 0.5s;
-    }
 
-    .opciones:hover{
+    }
+    .options:hover{
+        background-color: var(--background);
         color: var(--important-text-color);
-    }
-    /*    TERMINA LA QUERY PARA SCREEN, PARA NAV    */
-
-    /*    ARRANCA LA QUERY PARA SCREEN, PARA MAIN    */
-    .caja-main{
-        background-color: var(--background-small);
-        margin: 0 300px;
-        border-radius: 8px;
-        outline: solid 2px;
-        min-width: 500px;
+        font-size: 25px;
+        font-weight: var(--medium);
     }
 
-    .texto-nombre{
-        font-size: 50px;
-        font-weight: var(--bold);
+    /* SECTION SOBRE MI */
+
+    .sobre_mi{
+        display: flex;
+        flex-direction: row;
+        margin: 100px;
     }
 
-    .caja-descripcion{
+
+    .container_info_sobre_mi{
+        justify-content: left;
+    }    
+
+    .sobre_mi_nombre{
+        font-size: 70px;
+        
+    }
+    .sobre_mi_nombre span{
+        font-size: 80px;
+    }
+    .sobre_mi_descripcion{
         font-size: 40px;
     }
-  
-    .caja-formal{
+
+    .sobre_mi div{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* SECTION MIS HABILIDADES */
+
+    .mis_habilidades_lista{
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+
+    /* SECTION COMO TRABAJO */
+
+    .como_trabajo_lista {
+        display: flex;
+        flex-direction: row;
         
-        margin: 30px 500px;
-        border-radius: 8px;
-        min-width: 500px;
-        background-color: var(--background-small);
-        outline: white solid 2px;
     }
 
-    .caja-formal p{
-        font-size: 20px;
-    }
+    .habilidades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
+        min-height: 200px;
 
-    /*    TERMINA LA QUERY PARA SCREEN, PARA MAIN    */
+    }
 
 }
-  
-
-
