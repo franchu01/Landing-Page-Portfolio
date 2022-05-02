@@ -264,11 +264,22 @@ nav p{
 
     /* SECTION MIS HABILIDADES */
 
+    .mis_habilidades{
+        margin-top: 50px;
+    }
+
     .mis_habilidades_lista{
         display: flex;
         flex-direction: row;
        
     }
+
+    .mis_habilidades_titulo p{
+        font-size: 50px;
+        font-weight: var(--medium);
+    }   
+
+   
 
 
     /* SECTION COMO TRABAJO */
