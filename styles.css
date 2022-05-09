@@ -283,6 +283,28 @@ nav p{
 
 }
 
+.portfolio_toggle, .portfolio-toggle{
+    display: none;
+}
+
+.portfolio_toggle{
+
+    background-color: var(--background-small);
+    transition: all 0.5s;
+}
+
+.trabajo{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.portfolio-toggle:checked + .portfolio_toggle{
+    display: flex;
+    flex-direction: column;
+}
+
 /* CONTACTAME - FOOTER */
 
 .contactame_madre{
@@ -434,6 +456,22 @@ nav p{
     .container_iconos i{
         font-size: 100px;
         padding: 70px;
+    }
+
+    /* MI PORTFOLIO */
+
+    .mi_portfolio_hijo p{
+        font-size: 50px;
+    }
+
+    .portfolio_toggle{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio-botton{
+        display: none;
     }
 
 }
