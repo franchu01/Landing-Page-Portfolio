@@ -367,6 +367,7 @@ nav p{
         padding-bottom: 300px;
         background-image: url(./fondo1.jpg);
         background-position-y: center;
+        box-shadow: -1px 3px 43px 16px rgba(0,0,0,1);
     }
 
 
