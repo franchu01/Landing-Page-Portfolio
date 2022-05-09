@@ -243,7 +243,7 @@ nav p{
 
 .container_iconos i{
     font-size: 80px;
-    padding: 70px;
+    padding: 40px;
     transform: rotate(-45deg);
     animation: rotacion_hijo infinite 6s linear;
     transition: all 0.5s;
@@ -277,6 +277,37 @@ nav p{
 
 .mi_portfolio_hijo p{
 
+    color: var(--important-text-color);
+    font-weight: var(--medium);
+    margin-bottom: 40px;
+
+}
+
+/* CONTACTAME - FOOTER */
+
+.contactame_madre{
+    background: var(--background-small);
+}
+
+.contactame_hijo{
+    padding: 50px 0 30px 0;
+    margin-top: 70px;
+    margin-left: 5px;
+}
+
+.contactame_hijo p{
+    color: var(--important-text-color);
+    font-weight: var(--medium);
+    margin-bottom: 20px;
+}
+
+.contactame_hijo span{
+    color: var(--important-text-color);
+    font-size: 30px;
+}
+
+.contactame_hijo li{
+    font-size: 25px;
 }
 
 
@@ -401,6 +432,7 @@ nav p{
 
     .container_iconos i{
         font-size: 100px;
+        padding: 70px;
     }
 
 }
