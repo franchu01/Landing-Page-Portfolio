@@ -365,8 +365,8 @@ nav p{
         padding: 100px;
         padding-top: 300px;
         padding-bottom: 300px;
-        background-image: url(./fondo.jpg);
-        
+        background-image: url(./fondo1.jpg);
+        background-position-y: center;
     }
 
 
