@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Francisco Cersosimo - Software Developer Portfolio</title>
     <meta name="description" content="Francisco Cersosimo - Systems Engineering Student & Web Developer specializing in modern web technologies">
     <link rel="stylesheet" href="styles.css">
@@ -13,6 +13,94 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+
+    <!-- Quest System -->
+    <div id="quest-system" class="quest-system">
+        <div class="quest-toggle" id="quest-toggle">
+            <i class="fas fa-scroll"></i>
+        </div>
+        
+        <div class="quest-panel" id="quest-panel">
+            <div class="quest-header">
+                <h3>🎮 Adventure Mode</h3>
+                <button class="quest-close" id="quest-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="quest-content">
+                <div class="main-quest">
+                    <h4>🚀 Main Quest: Get to Know Francisco!</h4>
+                    <div class="quest-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="main-progress"></div>
+                        </div>
+                        <span class="progress-text" id="main-progress-text">0/5 completed</span>
+                    </div>
+                </div>
+                
+                <div class="quest-list" id="quest-list">
+                    <div class="quest-item" data-target="home" id="quest-home">
+                        <div class="quest-status">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="quest-details">
+                            <span class="quest-title">👋 Say Hello!</span>
+                            <span class="quest-description">Check out Francisco's epic intro</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quest-item" data-target="about" id="quest-about">
+                        <div class="quest-status">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="quest-details">
+                            <span class="quest-title">🕵️ Uncover His Story</span>
+                            <span class="quest-description">Discover the human behind the code</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quest-item" data-target="technical-skills-section" id="quest-skills">
+                        <div class="quest-status">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="quest-details">
+                            <span class="quest-title">🛠️ Check Out His Superpowers</span>
+                            <span class="quest-description">See what tech magic he can do</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quest-item" data-target="portfolio" id="quest-portfolio">
+                        <div class="quest-status">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="quest-details">
+                            <span class="quest-title">🎨 Peek at His Creations</span>
+                            <span class="quest-description">Browse his awesome projects</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quest-item" data-target="contact" id="quest-contact">
+                        <div class="quest-status">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <div class="quest-details">
+                            <span class="quest-title">📱 Start a Conversation</span>
+                            <span class="quest-description">Let's chat about cool projects!</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quest-reward" id="quest-reward" style="display: none;">
+                    <div class="reward-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>🎉 Quest Complete! You're Awesome!</h4>
+                    <p>You've explored everything! Francisco is excited to hear from you. Ready to build something amazing together? 🚀</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header>
         <nav class="menu">
@@ -114,8 +202,8 @@
                                         <i class="fas fa-briefcase"></i>
                                     </div>
                                     <div class="achievement-content">
-                                        <h4>Full-Stack Development</h4>
-                                        <p>Successfully delivered multiple web applications using modern technologies in a professional environment</p>
+                                        <h4>Automated Video Subtitle Generation</h4>
+                                        <p>Developed an AI-powered tool using OpenAI's speech-to-text technology that automatically generates subtitles for videos. This accessibility solution significantly improved content engagement for hearing-impaired users and streamlined the subtitle creation process.</p>
                                     </div>
                                 </div>
                                 <div class="achievement-item">
@@ -123,8 +211,8 @@
                                         <i class="fas fa-code-branch"></i>
                                     </div>
                                     <div class="achievement-content">
-                                        <h4>Team Collaboration</h4>
-                                        <p>Worked effectively in agile development teams, contributing to project success and code quality</p>
+                                        <h4>Semi-Automatic Video Creation Platform</h4>
+                                        <p>Engineered a comprehensive video creation tool that automates repetitive tasks and provides intelligent content suggestions. The platform reduced production time by 60% while maintaining high-quality output standards.</p>
                                     </div>
                                 </div>
                                 <div class="achievement-item">
@@ -132,8 +220,8 @@
                                         <i class="fas fa-rocket"></i>
                                     </div>
                                     <div class="achievement-content">
-                                        <h4>Performance Optimization</h4>
-                                        <p>Improved application performance and user experience through code optimization and best practices</p>
+                                        <h4>Streamlined Production Workflow</h4>
+                                        <p>Designed and implemented a comprehensive 4-step production process (creation, generation, translation, and rendering) that enabled team members to efficiently create high-quality educational courses with consistent standards and reduced complexity.</p>
                                     </div>
                                 </div>
                                 <div class="achievement-item">
@@ -141,8 +229,8 @@
                                         <i class="fas fa-robot"></i>
                                     </div>
                                     <div class="achievement-content">
-                                        <h4>AI & Process Automation</h4>
-                                        <p>Successfully automated multiple business processes at my workplace using AI technologies and advanced prompt engineering techniques</p>
+                                        <h4>Fully Automated Video Generation</h4>
+                                        <p>Evolved the semi-automatic system into a fully automated video creation pipeline that requires minimal human intervention. Users now only need to review and fine-tune the final output, achieving near-complete automation of the video production process.</p>
                                     </div>
                                 </div>
                                 <div class="achievement-item">
@@ -150,8 +238,8 @@
                                         <i class="fas fa-graduation-cap"></i>
                                     </div>
                                     <div class="achievement-content">
-                                        <h4>Continuous Learning</h4>
-                                        <p>Completed multiple courses in latest technologies while maintaining excellent academic and professional performance</p>
+                                        <h4>Centralized API Management System</h4>
+                                        <p>Built a unified API request management system that centralized service communications and improved operational efficiency. The system provides comprehensive analytics, real-time monitoring of daily API calls, and detailed cost tracking for better resource management.</p>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +250,7 @@
         </section>
 
         <!-- Technical & Soft Skills Section -->
-        <section class="technical-skills-section">
+        <section class="technical-skills-section" id="technical-skills-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Technical & Soft Skills</h2>
@@ -185,6 +273,9 @@
                                     <span class="skill-tag skill-tag-language">Java</span>
                                     <span class="skill-tag skill-tag-language">JavaScript</span>
                                     <span class="skill-tag skill-tag-language">TypeScript</span>
+                                    <span class="skill-tag skill-tag-language">Prolog</span>
+                                    <span class="skill-tag skill-tag-language">Wollok</span>
+                                    <span class="skill-tag skill-tag-language">Haskell</span>
                                 </div>
                             </div>
                             
@@ -195,6 +286,7 @@
                                     <span class="skill-tag skill-tag-framework">React</span>
                                     <span class="skill-tag skill-tag-framework">Node.js</span>
                                     <span class="skill-tag skill-tag-framework">Express.js</span>
+                                    <span class="skill-tag skill-tag-framework">Next.js</span>
                                 </div>
                             </div>
                             
@@ -523,5 +615,283 @@
             </div>
         </div>
     </footer>
+
+    <!-- Quest System JavaScript -->
+    <script>
+        class QuestSystem {
+            constructor() {
+                console.log('🎮 Quest System: Starting adventure...');
+                this.quests = [
+                    { id: 'quest-home', target: 'home', completed: false },
+                    { id: 'quest-about', target: 'about', completed: false },
+                    { id: 'quest-skills', target: 'technical-skills-section', completed: false },
+                    { id: 'quest-portfolio', target: 'portfolio', completed: false },
+                    { id: 'quest-contact', target: 'contact', completed: false }
+                ];
+                this.completedCount = 0;
+                this.isVisible = false;
+                this.celebrationMessages = [
+                    "🎉 Nice one!",
+                    "✨ Awesome!",
+                    "🚀 Keep going!",
+                    "💫 You're on fire!",
+                    "🌟 Amazing!"
+                ];
+                this.init();
+            }
+
+            init() {
+                // Clear any saved progress for testing
+                localStorage.removeItem('questProgress');
+                localStorage.removeItem('questDismissed');
+                
+                this.bindEvents();
+                this.createObservers();
+                this.loadProgress();
+                
+                // Show quest system immediately for testing
+                this.showQuestSystem();
+                
+                // Auto-expand panel briefly to show it works
+                setTimeout(() => {
+                    const questPanel = document.getElementById('quest-panel');
+                    questPanel.classList.add('expanded');
+                    
+                    // Auto-minimize after 5 seconds if user doesn't interact
+                    setTimeout(() => {
+                        if (!questPanel.matches(':hover')) {
+                            questPanel.classList.remove('expanded');
+                        }
+                    }, 5000);
+                }, 1000);
+            }
+
+            bindEvents() {
+                const questToggle = document.getElementById('quest-toggle');
+                const questClose = document.getElementById('quest-close');
+                const questPanel = document.getElementById('quest-panel');
+
+                if (questToggle) {
+                    questToggle.addEventListener('click', () => {
+                        this.toggleQuestPanel();
+                    });
+                }
+
+                if (questClose) {
+                    questClose.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent event bubbling
+                        console.log('❌ Quest System: Close button clicked!');
+                        this.closeQuestPanel();
+                    });
+                }
+
+                // Click outside to minimize
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('.quest-system') && this.isVisible && questPanel) {
+                        questPanel.classList.remove('expanded');
+                    }
+                });
+            }
+
+            createObservers() {
+                const options = {
+                    threshold: 0.3, // Lower threshold to trigger easier
+                    rootMargin: '0px 0px -10% 0px' // Less margin
+                };
+
+                this.quests.forEach(quest => {
+                    const element = document.getElementById(quest.target);
+                    console.log(`🔍 Quest System: Looking for adventure zone: ${quest.target}`, element ? '✅ Found!' : '❌ Missing!');
+                    if (element) {
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting && !quest.completed) {
+                                    console.log(`🎉 Quest System: You discovered ${quest.target}! Completing quest...`);
+                                    this.completeQuest(quest.id);
+                                }
+                            });
+                        }, options);
+                        observer.observe(element);
+                        console.log(`👀 Quest System: Now watching ${quest.target} for your arrival!`);
+                    } else {
+                        console.error(`🚨 Quest System: Adventure zone missing for ${quest.target}`);
+                    }
+                });
+            }
+
+            completeQuest(questId) {
+                console.log(`🎯 Quest System: Woohoo! Completing quest: ${questId}`);
+                const quest = this.quests.find(q => q.id === questId);
+                if (quest && !quest.completed) {
+                    console.log(`✅ Quest System: Quest unlocked! Adding to your collection`);
+                    quest.completed = true;
+                    this.completedCount++;
+                    
+                    const questElement = document.getElementById(questId);
+                    console.log(`🎮 Quest System: Updating quest display...`);
+                    if (questElement) {
+                        const statusIcon = questElement.querySelector('.quest-status i');
+                        const questTitle = questElement.querySelector('.quest-title');
+                        
+                        // Animate completion
+                        questElement.classList.add('completed');
+                        if (statusIcon) {
+                            statusIcon.className = 'fas fa-check-circle';
+                        }
+                        
+                        // Add fun celebration message
+                        if (questTitle) {
+                            const originalText = questTitle.textContent;
+                            const celebrationMsg = this.celebrationMessages[Math.floor(Math.random() * this.celebrationMessages.length)];
+                            questTitle.textContent = celebrationMsg;
+                            
+                            setTimeout(() => {
+                                questTitle.textContent = originalText;
+                            }, 2000);
+                        }
+                        
+                        // Add completion effect
+                        questElement.style.animation = 'questComplete 0.6s ease';
+                    }
+                    
+                    this.updateProgress();
+                    this.saveProgress();
+                    
+                    // Show quest system briefly when quest is completed
+                    if (!this.isVisible) {
+                        this.showQuestSystem();
+                        setTimeout(() => {
+                            const panel = document.getElementById('quest-panel');
+                            if (panel) {
+                                panel.classList.remove('expanded');
+                            }
+                        }, 3000);
+                    }
+                    
+                    if (this.completedCount === this.quests.length) {
+                        console.log('🏆 Quest System: ALL QUESTS COMPLETE! You are amazing!');
+                        this.showReward();
+                    }
+                } else {
+                    console.log(`🤔 Quest System: Hmm, quest already completed or not found`, quest);
+                }
+            }
+
+            updateProgress() {
+                const progressFill = document.getElementById('main-progress');
+                const progressText = document.getElementById('main-progress-text');
+                const percentage = (this.completedCount / this.quests.length) * 100;
+                
+                progressFill.style.width = percentage + '%';
+                progressText.textContent = `${this.completedCount}/${this.quests.length} completed`;
+            }
+
+            showReward() {
+                const questList = document.getElementById('quest-list');
+                const questReward = document.getElementById('quest-reward');
+                
+                setTimeout(() => {
+                    questList.style.display = 'none';
+                    questReward.style.display = 'block';
+                    questReward.style.animation = 'rewardAppear 0.8s ease';
+                }, 1000);
+            }
+
+            toggleQuestPanel() {
+                const questPanel = document.getElementById('quest-panel');
+                if (questPanel) {
+                    questPanel.classList.toggle('expanded');
+                }
+            }
+
+            closeQuestPanel() {
+                const questPanel = document.getElementById('quest-panel');
+                if (questPanel) {
+                    questPanel.classList.remove('expanded');
+                    console.log('🎮 Quest System: Panel closed - click the scroll icon to reopen!');
+                }
+            }
+
+            showQuestSystem() {
+                console.log('🎮 Quest System: Welcome to Adventure Mode!');
+                const questSystem = document.getElementById('quest-system');
+                if (questSystem) {
+                    questSystem.classList.add('visible');
+                    this.isVisible = true;
+                    console.log('✨ Quest System: Ready for adventure!');
+                } else {
+                    console.error('🚨 Quest System: Oops! Adventure panel not found!');
+                }
+            }
+
+            hideQuestSystem() {
+                const questSystem = document.getElementById('quest-system');
+                questSystem.classList.remove('visible');
+                this.isVisible = false;
+            }
+
+            saveProgress() {
+                const progressData = {
+                    quests: this.quests,
+                    completedCount: this.completedCount
+                };
+                localStorage.setItem('questProgress', JSON.stringify(progressData));
+            }
+
+            loadProgress() {
+                const savedProgress = localStorage.getItem('questProgress');
+                if (savedProgress) {
+                    const data = JSON.parse(savedProgress);
+                    this.quests = data.quests;
+                    this.completedCount = data.completedCount;
+                    
+                    // Restore completed quests visual state
+                    this.quests.forEach(quest => {
+                        if (quest.completed) {
+                            const questElement = document.getElementById(quest.id);
+                            const statusIcon = questElement.querySelector('.quest-status i');
+                            questElement.classList.add('completed');
+                            statusIcon.className = 'fas fa-check-circle';
+                        }
+                    });
+                    
+                    this.updateProgress();
+                    
+                    if (this.completedCount === this.quests.length) {
+                        this.showReward();
+                    }
+                }
+            }
+        }
+
+        // Initialize Quest System
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🚀 DOM Ready - Let the adventure begin!');
+            try {
+                new QuestSystem();
+                console.log('🎮 Quest System: Adventure Mode activated! Have fun exploring!');
+                
+                // Test if close button exists
+                const closeBtn = document.getElementById('quest-close');
+                console.log('❌ Close button found:', closeBtn ? '✅ Yes!' : '❌ Nope!');
+            } catch (error) {
+                console.error('😅 Quest System Oops:', error);
+            }
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
