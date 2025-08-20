@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Portfolio</title>
+    <title>Francisco Cersosimo - Software Developer Portfolio</title>
+    <meta name="description" content="Francisco Cersosimo - Systems Engineering Student & Web Developer specializing in modern web technologies">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
 
     <header>
         <nav class="menu">
-            <p>FRAN</p>
+            <div class="logo">
+                <p>FRANCISCO</p>
+                <span class="logo-subtitle">AI Engineer & Developer</span>
+            </div>
             <input type="checkbox" id="BOTTON" class="menu-toggle">
             <ul class="toggle">
-                <li><a href="" class="options">INICIO</a></li>
-                <li><a href="#SOBRE MI" class="options">SOBRE MI</a></li>
-                <li><a href="" class="options">PORTFOLIO</a></li>
-                <li><a href="" class="options" >REDES</a></li>
-                <li><a href="" class="options">CONTACTAME!</a></li>
+                <li><a href="#home" class="options">HOME</a></li>
+                <li><a href="#about" class="options">ABOUT</a></li>
+                <li><a href="#portfolio" class="options">PORTFOLIO</a></li>
+                <li><a href="#social" class="options">SOCIAL</a></li>
+                <li><a href="#contact" class="options">CONTACT</a></li>
             </ul>
 
             <label for="BOTTON">
@@ -31,154 +34,494 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </label>
-
         </nav>
-        
     </header>
     <main>
-
-        <section class="sobre_mi" id="SOBRE MI">
-
-            <div class="container_info_sobre_mi">
-                <p class="sobre_mi_nombre">Hola! Me llamo <span>Francisco</span></p>
-                <p class="sobre_mi_descripcion">Tengo 21 años y soy estudiante de Ingenieria en Sistemas en la UTN, tambien estoy haciendo un curso de desarrollo web en NUCBA.</p>
-            </div>
-            <div class="containter_foto_mia">
-                <img  class="foto_mia" src="./FOTO MIA.jpeg" alt="">
-                <p class="cv">Curriculum</p>
-            </div>
-
-            <aside class="sobre_mi_aside">
-
-
-            </aside>
-        </section>
-
-        <section class="mis_habilidades">
-            <div class="mis_habilidades_titulo">
-                <p>MIS HABILIDADES</p>
-            </div>
-            <ul class="mis_habilidades_lista">
-                <li>
-                    <div class="habilidades">
-                        <i class="fa-solid fa-people-group"></i>
-                        <p>TRABAJO EN EQUIPO</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione incidunt magnam quis odit nostrum dolor nam est sunt aperiam illo.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="habilidades">
-                    <i class="fa-solid fa-atom"></i>
-                    <p>MATERIAS BASICAS</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta veniam repellendus minus autem ut placeat quas nulla natus cum.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="habilidades">
-                    <i class="fa-solid fa-computer"></i>
-                    <p>LENGUAJES DE PROGRAMACION</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe animi ullam voluptate nisi nihil iste aliquam ducimus culpa enim!
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title animate__animated animate__fadeInUp">
+                        Hello! I'm <span class="highlight">Francisco</span>
+                    </h1>
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                        Systems Engineering Student & Full Stack Developer | AI Engineer
                     </p>
+                    <p class="hero-description animate__animated animate__fadeInUp animate__delay-2s">
+                        Experienced in creating innovative digital solutions and implementing AI-driven automation systems. Currently studying Systems Engineering at UTN with proven expertise in process automation and prompt engineering.
+                    </p>
+                    <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-3s">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
-                </li>
-            </ul>
-
-            <section class="mis_habilidades">
-                <div class="mis_habilidades_titulo">
-                    <p>COMO TRABAJO ?</p>
                 </div>
-                <ul class="como_trabajo_lista">
-                    <li>
-                        <div class="habilidades">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            <p>DIAGNOSTICO</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione incidunt magnam quis odit nostrum dolor nam est sunt aperiam illo.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="habilidades">
-                        <i class="fa-solid fa-crop"></i>
-                        <p>DISEÑO</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dicta veniam repellendus minus autem ut placeat quas nulla natus cum.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="habilidades">
-                        <i class="fa-solid fa-database"></i>
-                        <p>DESARROLLO</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe animi ullam voluptate nisi nihil iste aliquam ducimus culpa enim!
-                        </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="habilidades">
-                        <i class="fa-solid fa-circle-check"></i>
-                        <p>IMPLEMENTO</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut saepe animi ullam voluptate nisi nihil iste aliquam ducimus culpa enim!
-                        </p>
-                        </div>
-                    </li>
-                </ul>
-        </section>
-
-        <section class="mis_redes_madre">
-
-            <div class="mis_redes_hijo">
-                <div class="container_iconos">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <div class="container_iconos">
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href=""><i class="fa-brands fa-spotify"></i></a>
+                <div class="hero-image animate__animated animate__fadeInRight animate__delay-1s">
+                    <div class="image-container">
+                        <img class="profile-photo" src="./FOTO MIA.jpeg" alt="Francisco Cersosimo">
+                        <div class="image-decoration"></div>
+                    </div>
+                    <a href="#" class="cv-download">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="mi_portfolio_madre">
-
-
-            <div class="mi_portfolio_hijo">
-
-                <p>MI PORTFOLIO</p>
-                <label for="portfolio-botton">
-                    <div class="portfolio-botton"> 
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                </label>
-                <input type="checkbox" id="portfolio-botton" class="portfolio-toggle">
-                <ul class="portfolio_toggle">
-                    <li class="trabajo"><img src="./fondo.jpg" alt="trabajo1"></li>
-                    <li class="trabajo"><img src="" alt="trabajo2"></li>
-                    <li class="trabajo"><img src="" alt="trabajo3"></li>
-                    <li class="trabajo"><img src="" alt="trabajo4"></li>
-                    <li class="trabajo"><img src="" alt="trabajo5"></li>
-                </ul>
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                </div>
                 
-
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I'm a 25-year-old Systems Engineering student at UTN, just one year away from graduation. 
+                            Apart from my studies and professional work, I've completed courses in the latest technologies, 
+                            specializing in AI-driven solutions and process automation. With over 5 years of coding experience 
+                            and 2+ years of real-world professional experience, I bring both academic knowledge and practical 
+                            expertise to every project. As a prompt engineer with proven experience, I have successfully 
+                            automated multiple business processes at my workplace using artificial intelligence technologies.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">25</span>
+                                <span class="stat-label">Years Old</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years Coding</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Working</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Year to Graduate</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Achievements Section -->
+                        <div class="achievements">
+                            <h3 class="achievements-title">Professional Achievements</h3>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Full-Stack Development</h4>
+                                        <p>Successfully delivered multiple web applications using modern technologies in a professional environment</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-code-branch"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Team Collaboration</h4>
+                                        <p>Worked effectively in agile development teams, contributing to project success and code quality</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Performance Optimization</h4>
+                                        <p>Improved application performance and user experience through code optimization and best practices</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>AI & Process Automation</h4>
+                                        <p>Successfully automated multiple business processes at my workplace using AI technologies and advanced prompt engineering techniques</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Continuous Learning</h4>
+                                        <p>Completed multiple courses in latest technologies while maintaining excellent academic and professional performance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </section>
 
-        <footer class="contactame_madre">
+        <!-- Technical & Soft Skills Section -->
+        <section class="technical-skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical & Soft Skills</h2>
+                    <p class="section-subtitle">My technical expertise and personal strengths</p>
+                </div>
+                
+                <!-- Technical Skills -->
+                <div class="skills-section-wrapper">
+                    <div class="skills-category-full">
+                        <h3 class="skills-category-title">
+                            <i class="fas fa-code"></i>
+                            Technical Skills
+                        </h3>
+                        <div class="skills-grid-layout">
+                            <div class="skills-subcategory">
+                                <h4 class="skills-subcategory-title">Programming Languages</h4>
+                                <div class="skills-tags">
+                                    <span class="skill-tag skill-tag-language">C</span>
+                                    <span class="skill-tag skill-tag-language">C++</span>
+                                    <span class="skill-tag skill-tag-language">Java</span>
+                                    <span class="skill-tag skill-tag-language">JavaScript</span>
+                                    <span class="skill-tag skill-tag-language">TypeScript</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-subcategory">
+                                <h4 class="skills-subcategory-title">Frameworks & Libraries</h4>
+                                <div class="skills-tags">
+                                    <span class="skill-tag skill-tag-framework">Spring Boot</span>
+                                    <span class="skill-tag skill-tag-framework">React</span>
+                                    <span class="skill-tag skill-tag-framework">Node.js</span>
+                                    <span class="skill-tag skill-tag-framework">Express.js</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-subcategory">
+                                <h4 class="skills-subcategory-title">Databases & Tools</h4>
+                                <div class="skills-tags">
+                                    <span class="skill-tag skill-tag-database">MySQL</span>
+                                    <span class="skill-tag skill-tag-database">PostgreSQL</span>
+                                    <span class="skill-tag skill-tag-database">Git</span>
+                                    <span class="skill-tag skill-tag-database">Docker</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills-subcategory">
+                                <h4 class="skills-subcategory-title">AI & Automation</h4>
+                                <div class="skills-tags">
+                                    <span class="skill-tag skill-tag-ai">Prompt Engineering</span>
+                                    <span class="skill-tag skill-tag-ai">Process Automation</span>
+                                    <span class="skill-tag skill-tag-ai">AI Integration</span>
+                                    <span class="skill-tag skill-tag-ai">Machine Learning</span>
+                                </div>
+                            </div>
 
-            <div class="contactame_hijo">
+                            <div class="skills-subcategory">
+                                <h4 class="skills-subcategory-title">System Architecture</h4>
+                                <div class="skills-tags">
+                                    <span class="skill-tag skill-tag-architecture">Microservices</span>
+                                    <span class="skill-tag skill-tag-architecture">Serverless</span>
+                                    <span class="skill-tag skill-tag-architecture">API Design</span>
+                                    <span class="skill-tag skill-tag-architecture">Message Queues</span>
+                                    <span class="skill-tag skill-tag-architecture">Broker</span>
+                                </div>
+                            </div>
 
-                <p>CONTACTAME!</p>
-                <ul>
-                    <li><span>Francisco Cersosimo</span></li>
-                    <li><span>Edad:</span> 21 años</li>
-                    <li><span>Telefono:</span> +54 11 2461 6029</li>
-                    <li><span>Email:</span> franchucersosimo@gmail.com</li>
-                </ul>
-
+                            <div class="skills-subcategory">
+                                <h4 class="skills-subcategory-title">Coding Patterns</h4>
+                                <div class="skills-tags">
+                                    <span class="skill-tag skill-tag-pattern">MVC</span>
+                                    <span class="skill-tag skill-tag-pattern">Singleton</span>
+                                    <span class="skill-tag skill-tag-pattern">Observer</span>
+                                    <span class="skill-tag skill-tag-pattern">Factory</span>
+                                    <span class="skill-tag skill-tag-pattern">Strategy</span>
+                                    <span class="skill-tag skill-tag-pattern">State</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Soft Skills -->
+                    <div class="skills-category-full">
+                        <h3 class="skills-category-title">
+                            <i class="fas fa-users"></i>
+                            Soft Skills
+                        </h3>
+                        <div class="soft-skills-compact">
+                            <div class="soft-skill-compact">
+                                <i class="fas fa-handshake"></i>
+                                <span>Team Collaboration</span>
+                            </div>
+                            <div class="soft-skill-compact">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="soft-skill-compact">
+                                <i class="fas fa-clock"></i>
+                                <span>Time Management</span>
+                            </div>
+                            <div class="soft-skill-compact">
+                                <i class="fas fa-comments"></i>
+                                <span>Communication</span>
+                            </div>
+                            <div class="soft-skill-compact">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Adaptability</span>
+                            </div>
+                            <div class="soft-skill-compact">
+                                <i class="fas fa-target"></i>
+                                <span>Goal-Oriented</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </footer>
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How I Work</h2>
+                    <p class="section-subtitle">My development process</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-search"></i>
+                        </div>
+                        <h3 class="step-title">Analysis</h3>
+                        <p class="step-description">
+                            Deep dive into requirements, understanding user needs and project goals to create 
+                            a solid foundation for development.
+                        </p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+                        <h3 class="step-title">Design</h3>
+                        <p class="step-description">
+                            Creating intuitive and engaging user interfaces with focus on user experience 
+                            and modern design principles.
+                        </p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="step-title">Development</h3>
+                        <p class="step-description">
+                            Building robust, scalable applications using best practices, clean code, 
+                            and the latest technologies and frameworks.
+                        </p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="step-title">Launch</h3>
+                        <p class="step-description">
+                            Deploying solutions with thorough testing, optimization, and ongoing 
+                            support to ensure optimal performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section" id="social">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Find me on social media</p>
+                </div>
+                
+                <div class="social-container">
+                    <div class="social-grid">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <div class="social-icon instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <span class="social-label">Instagram</span>
+                        </a>
+                        
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <div class="social-icon linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <span class="social-label">LinkedIn</span>
+                        </a>
+                        
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <div class="social-icon whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <span class="social-label">WhatsApp</span>
+                        </a>
+                        
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <div class="social-icon github">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <span class="social-label">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">Projects showcase coming soon</p>
+                </div>
+                
+                <div class="coming-soon-container">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="coming-soon-title">Portfolio Projects Coming Soon</h3>
+                        <p class="coming-soon-description">
+                            I'm currently working on exciting projects that showcase my expertise in web development, 
+                            AI automation systems, and software engineering. Check back soon to see my latest work including 
+                            real-world AI solutions, automated business processes, and innovative web applications.
+                        </p>
+                        <div class="coming-soon-features">
+                            <div class="feature-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Full-Stack Applications</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Automation Tools</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Prompt Engineering</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>Cloud Integration</span>
+                            </div>
+                        </div>
+                        <p class="coming-soon-contact">
+                            Want to discuss a project or see my previous work? 
+                            <a href="#contact" class="contact-link">Get in touch</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together on your next project</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Francisco Cersosimo</h3>
+                                <p>Systems Engineering Student & AI Engineer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Age</h3>
+                                <p>25 years old</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+54 11 2461 6029</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>franchucersosimo@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer>
 
-    </footer>   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Francisco Cersosimo. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
